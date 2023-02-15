@@ -85,7 +85,7 @@ foreach ($iterator as $file) {
 
     /** php8.0以下版本==通过反射找到这个类的所有共有方法作为action */
     $class = new ReflectionClass($class_name);
-    foreach (config("plugin.sunsgne.annotations.ignored") as $v) {
+    foreach (config("plugin.guanhui07.annotations.ignored") as $v) {
         AnnotationReader::addGlobalIgnoredName($v);
     }
     $class_name = $class->name;
